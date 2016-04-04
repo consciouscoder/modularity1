@@ -1,0 +1,136 @@
+.datatable {
+    width: 100%;
+    font-size: 18px;
+    border-spacing: 10px 50px;
+}
+
+.datatable th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.row {
+    border:1px solid lightgrey; 
+}
+
+.stats-table {
+    width: 30%;
+    border-top:    2px solid lightgrey;
+    border-bottom:    2px solid lightgrey;
+    border-spacing: 5px 5px;
+}
+
+
+.stats-table td {
+    padding: 20px;
+}
+
+
+.stats-table .stat {
+    font-size: 40px;    
+    font-weight: bold;
+}
+
+.stats-table .slabel {
+    font-size: 12px;    
+    font-weight: bold;
+    color: lightgrey;
+    text-align: center;
+}
+
+.bar-graph {
+    width: 100%; 
+    border-spacing: 5px 5px;
+}
+
+.bar-graph th {
+    font-size: 16px;    
+    font-weight: bold;     
+    text-align: right;
+    width: 15%;
+    padding-right: 10px;
+}
+
+.bar-graph tr, td {
+    padding: 1px;
+    line-height: 25px;
+}
+
+.bar-graph div {
+    width: 85%;
+    color: white;
+    font-size: 14px;    
+    font-weight: bold;    
+    background-color: CornflowerBlue;
+    padding-left: 7px;
+}
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;    
+    font-weight: bold;  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 20% auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    background: #fff;
+    
+    /*background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999); */
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Media-figure {
+  margin-right: 1em;
+}
+
+.Media-body {
+  font-size: 16px; 
+  flex: 1;
+}
